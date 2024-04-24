@@ -257,7 +257,7 @@ handleEvent pID e world
   | otherwise = world
   
   
-main = groupActivityOf 1 init step view
+main = groupActivityOf 2 init step view
   where 
     init = static (\gen -> easyWorld)
     step = static (\playerNumber event world -> handleEvent playerNumber event world)
